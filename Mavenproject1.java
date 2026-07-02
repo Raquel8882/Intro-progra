@@ -11,30 +11,22 @@ import javax.swing.JOptionPane;
  * @author Laboratorio
  */
 public class Mavenproject1 {
+   
 
     public static void main(String[] args) {
-        Cliente Cliente1 = new Cliente();
-       
-        
-        Cliente1.cedula =JOptionPane.showInputDialog("Ingrese su cedula");
-        Cliente1.nombre=JOptionPane.showInputDialog("Ingrese su cedula");
-        
-       
-
+        //Menu 
+        String opcion = JOptionPane.showInputDialog(null,"***********MENU************ /  + 1- Agregar vendedor  + 2- Agregar Factura  + 3- Salir");
+        int opcion1=0;
+        opcion1=Integer.parseInt(opcion);
+        switch(opcion1){
+            case 1:
+                Vendedor();
+            case 2:
+                Factura();
+            case 3:
+                
+                
+         
+        }
     }
-    
-     public static void CrearVehiculo(){
-     Vehiculo num1 = new Vehiculo();
-     num1.marca="hyundai";
-     
-     
-     CrearVehiculo();
-     
-     
-    }
-     
-    
 }
-
-   
-  
